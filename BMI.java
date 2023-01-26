@@ -1,29 +1,19 @@
 import java.util.Scanner;
+/* wooo I did it */
+public class BMI {
 
-public class BMI
-{
-    private double weight;
-    private double height; 
+  public static void main(String[] args) {
+    Scanner myObj = new Scanner(System.in); // Create a Scanner object
 
-    public double getBMI(){
-        double value = this.weight/(this.height*this.height);
-        return value;
-    }
+    System.out.println("Enter weight (kg): ");
+    double weight = myObj.nextDouble(); // Read user input
+    System.out.println("Entered weight (kg) is: " + weight);
 
-    public static void main(String[] args){
-        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+    System.out.println("Enter height (m): ");
+    double height = myObj.nextDouble(); // Read user input
+    System.out.println("Entered height (m) is: " + height);
 
-        System.out.println("Enter weight");
-        double weight = myObj.nextDouble();  // Read user input
-        System.out.println("weight is: " + weight);
-        
-        System.out.println("Enter height");
-        double height = myObj.nextDouble(); // Read user input
-        System.out.println("height is: " + height);
 
-        BMI myNewObj = new BMI();
-
-        System.out.println("BMI is" + myNewObj.getBMI(weight, height));
-    }
+    System.out.println("Your BMI is " + ((weight)/(height*height)));
+  }
 }
-
