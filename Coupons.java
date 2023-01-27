@@ -1,22 +1,23 @@
+import java.util.Scanner;
 public class Coupons {
-    private int cps = 15;
 
-    public int getCandy() {
-        if(cps>=10){
-            System.out.println("You can get a candy bar");
-            cps = cps - 10;
-            return 1;
-        } else if(cps >= 3) {
-            System.out.println("You can get a gumball");
-            cps = cps - 3;
-            return 1;
-
-        } else {
-            return 0;
-        }
-    }
 
     public static void main(String[] args){
+      Scanner keyboard = new Scanner(System.in);
+
+      System.out.println("Enter number of coupons: ");
+      int cps = keyboard.nextInt(); //Read coupon value
+
+      if(cps>=13){
+        System.out.println("You can get a candy bar AND a gumball...werk!");
+      } else if(cps >= 10 && cps <= 12){
+        System.out.println("You can get a candy bar!");
+      } else if(cps >= 3 && cps < 10){
+        System.out.println("All you get is a gumball...");
+      } else {
+        System.out.println("Sorry, you're broke!");
+      }
+      
         
     }
 }
