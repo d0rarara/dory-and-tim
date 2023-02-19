@@ -8,6 +8,7 @@ public class Name{
     String first = myObj.nextLine().toLowerCase().trim(); 
     System.out.println("Enter last name: ");
     String last = myObj.nextLine().toLowerCase().trim();
+    myObj.close();
     
     
     /* print full name in pig latin with the first letter capitalized

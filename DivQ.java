@@ -10,6 +10,7 @@ public class DivQ {
     int n1 = myObj.nextInt();
     System.out.println("Enter second number: ");
     int n2 = myObj.nextInt();
+    myObj.close();
 
     int quotient = n1 / n2;
     int remainder = n1 % n2;

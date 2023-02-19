@@ -7,6 +7,7 @@ public class SimpInt{
     Scanner myObj = new Scanner (System.in);
     System.out.println("Enter loan amount: ");
     double princi_amnt = myObj.nextDouble();
+    myObj.close();
     System.out.println("The simple interest of the loan is: " + (princi_amnt*int_rate*no_of_yrs)/100 );
 
     

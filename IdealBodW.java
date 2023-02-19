@@ -9,6 +9,7 @@ public class IdealBodW{
     int height = myObj.nextInt();
     System.out.println("Enter inches: ");
     int inch = myObj.nextInt();
+    myObj.close();
 
     if(height == feet){
       System.out.println("Your ideal body weight is: " + ((inch*5)+pounds));

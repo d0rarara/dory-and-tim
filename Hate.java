@@ -8,6 +8,7 @@ public class Hate{
     'hate' and change it to 'love'*/
     System.out.println("The line of text to be changed is: ");
     String oldLine = myObj.nextLine();
+    myObj.close();
     String newLine = oldLine.replaceFirst(a,"love");
 
     if(a.equalsIgnoreCase(a)){

@@ -4,6 +4,7 @@ public class GPA {
 		Scanner myObj = new Scanner(System.in);
 		System.out.println("Enter your grade (in %): ");
 		double grade = myObj.nextDouble();
+		myObj.close();
 		double gpa = (grade/100)*4;
 		System.out.println("Your GPA is: \n" + gpa);
 	}

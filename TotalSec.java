@@ -5,6 +5,7 @@ public class TotalSec{
     Scanner myObj = new Scanner(System.in);
     System.out.println("Enter number of seconds: ");
     int tot_sec = myObj.nextInt();// 
+    myObj.close();
     int hours = (tot_sec/3600);
     int m = (tot_sec - (tot_sec/3600)*3600);
     int minutes = (m/60);

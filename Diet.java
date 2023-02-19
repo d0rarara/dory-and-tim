@@ -11,6 +11,7 @@ public class Diet{
     System.out.println("Enter number of diet sodas: ");
     double n = myObj.nextDouble();
     double soda = 0.001*n;
+    myObj.close();
 
     double a = STARTING_WEIGHT + (soda*100);
     double b = MOUSE_WEIGHT;

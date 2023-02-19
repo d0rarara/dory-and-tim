@@ -7,6 +7,7 @@ public class Coupons {
 
       System.out.println("Enter number of coupons: ");
       int cps = keyboard.nextInt(); //Read coupon value
+      keyboard.close();
 
       if(cps>=13){
         System.out.println("You can get a candy bar AND a gumball...werk!");
